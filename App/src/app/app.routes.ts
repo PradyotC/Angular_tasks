@@ -7,6 +7,8 @@ import { Task4parentComponent } from './task4/task4parent.component';
 import { Task5Component } from './Task5/task5.component';
 import { DropdownComponent } from './task6/task6.component';
 import { PipeComponent } from './Task7/task7.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent} from './reactive-form/reactive-form.component';
 
 export const route:Route[] = [
     {
@@ -36,5 +38,13 @@ export const route:Route[] = [
     {
         path:'task7',
         component: PipeComponent
+    },
+    {
+        path:'templateform',
+        component: TemplateFormComponent
+    },
+    {
+        path:'reactiveform',
+        component: ReactiveFormComponent
     }
 ]

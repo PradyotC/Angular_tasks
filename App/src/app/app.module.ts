@@ -14,14 +14,15 @@ import { Task5ACComponent } from './Task5/components/task5ac.component';
 import { DropdownComponent } from './task6/task6.component';
 import { PipeComponent } from './Task7/task7.component';
 import { ContentPipe } from './Task7/http.pipe';
-import { FormTemplateComponent } from './form-template/form-template.component';
 import { Task1Component } from './task1/task1.component';
 import { MobileListComponent } from './task1/mobile-list/mobile-list.component';
 import { LaptopListComponent } from './task1/laptop-list/laptop-list.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule } from '@angular/router';
 import { route } from './app.routes';
-
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,14 +38,17 @@ import { route } from './app.routes';
     DropdownComponent,
     PipeComponent,
     ContentPipe,
-    FormTemplateComponent,
     Task1Component,
     MobileListComponent,
     LaptopListComponent,
-    NavigationComponent
+    NavigationComponent,
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(route)
   ],
   providers: [],
